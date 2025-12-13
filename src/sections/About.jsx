@@ -1,5 +1,5 @@
 // Import image
-import profileImg from '../images/profile.png';
+import profileImg from '../images/profile.jpg';
 import '../styles/about.css';
 
 const About = () => {

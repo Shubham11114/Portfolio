@@ -29,7 +29,7 @@ const Projects = () => {
 
                         <div className="project-links">
                             <a href="#" className="btn btn-primary">Live Demo</a>
-                            <a href="#" className="btn btn-outline">GitHub Repo</a>
+                            <a href="https://github.com/Shubham11114/Major-Projects" className="btn btn-outline">GitHub Repo</a>
                         </div>
                     </div>
                 </div>

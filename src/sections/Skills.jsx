@@ -18,7 +18,7 @@ const skillsData = {
         { name: 'Express.js', icon: <SiExpress color="var(--text-primary)" /> },
         { name: 'Java', icon: <FaJava color="#007396" /> },
         { name: 'Python', icon: <FaPython color="#3776AB" /> },
-        { name: 'C', icon: <SiC color="#A8B9CC" /> },
+        // { name: 'C', icon: <SiC color="#A8B9CC" /> },
     ],
     Database: [
         { name: 'MongoDB', icon: <SiMongodb color="#47A248" /> },

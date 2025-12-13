@@ -1,0 +1,105 @@
+:root {
+    /* Colors */
+    --bg-primary: #0a0a0a;
+    --bg-secondary: #121212;
+    --bg-footer: #050505;
+    --bg-glass: rgba(255, 255, 255, 0.05);
+    --nav-bg: rgba(10, 10, 10, 0.7);
+
+    --text-primary: #ffffff;
+    --text-secondary: #a1a1aa;
+    --text-accent: #38bdf8;
+    /* Cyan-400 */
+
+    --primary: #3b82f6;
+    /* Blue-500 */
+    --secondary: #8b5cf6;
+    /* Violet-500 */
+    --accent: #06b6d4;
+    /* Cyan-500 */
+
+    --gradient-main: linear-gradient(135deg, var(--primary), var(--secondary));
+    --gradient-text: linear-gradient(to right, var(--text-accent), var(--secondary));
+
+    /* Glassmorphism */
+    --glass-border: 1px solid rgba(255, 255, 255, 0.1);
+    --glass-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    --backdrop-blur: blur(10px);
+
+    /* Typography */
+    --font-main: 'Inter', sans-serif;
+
+    /* Code Highlighting */
+    --code-text: #e2e8f0;
+    --code-keyword: #f472b6;
+    --code-variable: #60a5fa;
+    --code-string: #a78bfa;
+    --code-bracket: #fbbf24;
+
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-medium: 0.3s ease;
+}
+
+[data-theme="light"] {
+    /* Colors */
+    --bg-primary: #ffffff;
+    --bg-secondary: #f0f4f8;
+    --bg-footer: #f9fafb;
+    --bg-glass: rgba(255, 255, 255, 0.7);
+    --nav-bg: rgba(255, 255, 255, 0.85);
+
+    --text-primary: #111827;
+    --text-secondary: #4b5563;
+    --text-accent: #0369a1;
+
+    --glass-border: 1px solid rgba(0, 0, 0, 0.08);
+    --glass-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+
+    /* Code Highlighting (Light Mode) */
+    --code-text: #374151;
+    --code-keyword: #d946ef;
+    --code-variable: #2563eb;
+    --code-string: #7c3aed;
+    --code-bracket: #d97706;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-main);
+    margin: 0;
+    overflow-x: hidden;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(circle at 15% 50%, rgba(59, 130, 246, 0.08), transparent 25%),
+        radial-gradient(circle at 85% 30%, rgba(139, 92, 246, 0.08), transparent 25%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--bg-secondary);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-secondary);
+}

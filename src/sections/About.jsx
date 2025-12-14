@@ -21,17 +21,17 @@ const About = () => {
 
                         <div className="stats-grid">
                             <div className="stat-card">
-                                <span className="stat-number">10+</span>
+                                <span className="stat-number">5+</span>
                                 <span className="stat-label">Projects Completed</span>
                             </div>
                             <div className="stat-card">
-                                <span className="stat-number">1.5+</span>
+                                <span className="stat-number">2+</span>
                                 <span className="stat-label">Years Experience</span>
                             </div>
-                            <div className="stat-card">
+                            {/* <div className="stat-card">
                                 <span className="stat-number">5+</span>
                                 <span className="stat-label">Happy Clients</span>
-                            </div>
+                            </div> */}
                         </div>
 
                         <div className="about-cta">

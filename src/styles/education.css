@@ -1,0 +1,249 @@
+/* Education Section */
+.education-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* Education Card */
+.edu-card {
+    background: var(--bg-glass);
+    border: var(--glass-border);
+    border-radius: 24px;
+    padding: 35px;
+    backdrop-filter: var(--backdrop-blur);
+    transition: all 0.4s ease;
+    display: flex;
+    gap: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.edu-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--gradient-main);
+}
+
+.edu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    border-color: rgba(59, 130, 246, 0.2);
+}
+
+.edu-icon-wrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    border-radius: 14px;
+    background: var(--gradient-main);
+    color: white;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edu-details {
+    flex: 1;
+}
+
+.edu-degree {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
+
+.edu-institution {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin-bottom: 4px;
+}
+
+.edu-period {
+    font-size: 0.85rem;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+.edu-score {
+    margin-bottom: 18px;
+}
+
+.score-badge {
+    display: inline-block;
+    padding: 6px 16px;
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    border-radius: 50px;
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.edu-coursework h4 {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.coursework-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.coursework-tags span {
+    font-size: 0.78rem;
+    padding: 4px 12px;
+    background: rgba(6, 182, 212, 0.08);
+    color: var(--accent);
+    border-radius: 20px;
+    border: 1px solid rgba(6, 182, 212, 0.12);
+    font-weight: 500;
+}
+
+/* Achievement Card */
+.achievement-card {
+    background: var(--bg-glass);
+    border: var(--glass-border);
+    border-radius: 24px;
+    padding: 35px;
+    backdrop-filter: var(--backdrop-blur);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.achievement-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(135deg, #f59e0b, #ef4444);
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    border-color: rgba(245, 158, 11, 0.2);
+}
+
+.achievement-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.achievement-header h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.trophy-icon {
+    color: #f59e0b;
+    font-size: 1.5rem;
+}
+
+.achievement-item {
+    display: flex;
+    gap: 18px;
+}
+
+.achievement-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    min-width: 60px;
+    padding: 12px;
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(239, 68, 68, 0.1));
+    border-radius: 16px;
+    border: 1px solid rgba(245, 158, 11, 0.2);
+    color: #f59e0b;
+    font-size: 1.4rem;
+}
+
+.rank {
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+.achievement-info h4 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.achievement-org {
+    font-size: 0.85rem;
+    color: var(--accent);
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.achievement-details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.achievement-details li {
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 6px;
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.achievement-details li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: #f59e0b;
+    font-weight: 700;
+}
+
+@media (max-width: 900px) {
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .edu-card {
+        flex-direction: column;
+        padding: 25px;
+    }
+
+    .achievement-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .achievement-badge {
+        flex-direction: row;
+    }
+}

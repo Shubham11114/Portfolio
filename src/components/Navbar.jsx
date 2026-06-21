@@ -5,10 +5,21 @@ import ThemeToggle from './ThemeToggle';
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [activeSection, setActiveSection] = useState('');
 
     useEffect(() => {
         const handleScroll = () => {
             setScrolled(window.scrollY > 50);
+
+            // Active section detection
+            const sections = ['hero', 'about', 'skills', 'projects', 'roadmap', 'education', 'contact'];
+            for (const id of sections.reverse()) {
+                const el = document.getElementById(id);
+                if (el && window.scrollY >= el.offsetTop - 200) {
+                    setActiveSection(id);
+                    break;
+                }
+            }
         };
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
@@ -31,8 +42,9 @@ const Navbar = () => {
     const navLinks = [
         { name: 'About', href: '#about' },
         { name: 'Skills', href: '#skills' },
-        { name: 'Journey', href: '#roadmap' },
         { name: 'Projects', href: '#projects' },
+        { name: 'Journey', href: '#roadmap' },
+        { name: 'Education', href: '#education' },
         { name: 'Contact', href: '#contact' },
     ];
 
@@ -52,6 +64,7 @@ const Navbar = () => {
                         <a
                             key={link.name}
                             href={link.href}
+                            className={activeSection === link.href.slice(1) ? 'active' : ''}
                             onClick={handleLinkClick}
                         >
                             {link.name}
@@ -63,6 +76,7 @@ const Navbar = () => {
                 <button
                     className={`mobile-toggle ${mobileMenuOpen ? 'open' : ''}`}
                     onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                    aria-label="Toggle navigation menu"
                 >
                     <span className="bar"></span>
                     <span className="bar"></span>

@@ -3,9 +3,12 @@ import Navbar from './components/Navbar';
 import Hero from './sections/Hero';
 import About from './sections/About';
 import Skills from './sections/Skills';
-import Roadmap from './sections/Roadmap';
 import Projects from './sections/Projects';
+import Roadmap from './sections/Roadmap';
+import Education from './sections/Education';
+import Contact from './sections/Contact';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 import './index.css';
 
 function App() {
@@ -16,10 +19,13 @@ function App() {
         <Hero />
         <About />
         <Skills />
-        <Roadmap />
         <Projects />
+        <Roadmap />
+        <Education />
+        <Contact />
       </main>
       <Footer />
+      <ScrollToTop />
     </div>
   );
 }

@@ -1,115 +1,70 @@
-# 🌐 Shubham Kumar | MERN Stack Developer Portfolio
+# Shubham Kumar — Portfolio
 
-🚀 Welcome to the repository of my personal portfolio!  
-I’m **Shubham Kumar**, a highly motivated **MERN Stack Developer** and Full-Stack Web Developer based in Bihar, India. This portfolio showcases my technical skills, professional journey, educational background, and full-stack projects.
+**Full Stack Developer (MERN)** · B.Tech CSE @ HNBGU · Open to Opportunities
 
-Designed with a premium **Glassmorphism** aesthetic, this responsive React web application demonstrates my focus on clean code, performance, dynamic animations, and exceptional UI/UX design.
-
----
-
-## 🌟 Key Features
-
-- **Modern UI/UX**: Premium dark theme with glassmorphism effects, gradient glows, and smooth scroll-reveal animations.
-- **Fully Responsive**: Optimized layout for desktop, tablet, and mobile devices.
-- **Dynamic Projects Showcase**: Detailed project cards with technology chips, feature highlights, and direct links to live demos and source code.
-- **Interactive Elements**: Typing animations, floating badges, and interactive forms.
-- **Modular Architecture**: Built with React and Vite for blazing-fast performance.
+[![Live Site](https://img.shields.io/badge/Live-Portfolio-3b82f6?style=for-the-badge&logo=vercel&logoColor=white)](https://shubham11114.github.io/Portfolio/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shubham11114)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Shubham11114)
 
 ---
 
-## 🚀 Featured Projects
+## About
 
-### 🎓 AcademIQ — *Academic Intelligence Platform*
-A full-stack academic monitoring platform to track student attendance and test scores in real time.
-- **Role Support:** Student, Faculty, and Administrator interfaces.
-- **Features:** Automated at-risk student flagging, actionable analytics dashboards.
-- **Tech:** React.js, Node.js, Express.js, MongoDB, JWT
-
-### 🧭 WanderHub — *Tourism Web Application*
-A responsive full-stack tourism platform featuring travel destinations across Bihar with dynamic content delivery.
-- **Features:** Secure RESTful APIs, user authentication, interactive and responsive components.
-- **Tech:** Node.js, Express.js, MongoDB, HTML/CSS/JS
-- **Live Demo:** [WanderHub Live](https://wanderhub-mxi3.onrender.com/listings)
-
-### 🎵 Spotify Clone — *Music Streaming UI*
-A pixel-perfect frontend replica of the Spotify web player focusing on complex layout structures and media query optimizations.
-- **Tech:** HTML5, CSS3, Vanilla JavaScript (ES6+)
+A personal portfolio built with **React + Vite**, featuring a glassmorphism dark/light theme, scroll-reveal animations, and a fully responsive layout. It showcases my projects, work experience, certifications, and technical skills.
 
 ---
 
-## 🛠️ Tech Stack & Skills
+## Sections
 
-### 💡 Languages
-- JavaScript (ES6+)
-- Python
-- Java
-- C
-- SQL
-
-### 🎨 Frontend
-- React.js
-- HTML5 / CSS3
-- Responsive Web Design
-
-### ⚙️ Backend
-- Node.js
-- Express.js
-- RESTful APIs
-
-### 🗄️ Databases & Tools
-- MongoDB
-- SQL / DBMS
-- Git & GitHub
-- Visual Studio Code
-
-### 🧠 Core Concepts
-- Data Structures & Algorithms
-- Object-Oriented Programming (OOP)
-- Operating Systems
+| Section | Description |
+|---------|-------------|
+| **Hero** | Animated intro with typewriter roles and code snippet |
+| **About** | Bio, stats, and CV download |
+| **Skills** | Categorised tech grid — languages, frameworks, databases, tools, and core concepts |
+| **Projects** | AcademIQ, WanderHub, Spotify Clone — with live demo links |
+| **Experience** | Ranjan Technovate, JPMorgan Chase (Forage), VaultofCodes, Internshala |
+| **Journey** | Visual timeline from Diploma → B.Tech, internships, and milestones |
+| **Education** | B.Tech CSE @ HNBGU (current), Diploma CGPA 8.68, Bug Hunt Bonanza 3rd rank |
+| **Certifications** | 8 certs — Cisco CCNA, Python, Cybersecurity, JPMorgan, and more |
+| **Contact** | Email form and social links |
 
 ---
 
-## 📂 Portfolio Sections
+## Tech Stack
 
-- **Home**: Dynamic hero section with typewriter effect and availability status.
-- **About Me**: Quick stats (CGPA, Projects, Tech) and CV download.
-- **Skills**: Categorized technology expertise grid.
-- **Projects**: Comprehensive breakdown of my best work.
-- **Journey**: Visual timeline of my development roadmap.
-- **Education & Achievements**: Diploma details and hackathon achievements.
-- **Contact**: Functional contact form and social media links.
+**Frontend:** React.js · JavaScript (ES6+) · HTML5 · CSS3  
+**Backend:** Node.js · Express.js · REST APIs · JWT · Passport.js  
+**Databases:** MongoDB · SQL  
+**Tools:** Git · GitHub · VS Code · Cloudinary · Mapbox  
+**Build:** Vite · GitHub Pages
 
 ---
 
-## 💻 Local Setup & Development
+## Featured Projects
 
-To run this portfolio locally on your machine:
+### AcademIQ — Academic Intelligence Platform
+Real-time academic monitoring with role-based dashboards, automated at-risk flagging, and JWT auth.  
+`React.js` `Node.js` `Express.js` `MongoDB` `JWT`
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/Shubham11114/My_portfolio.git
-   cd My_portfolio
-   ```
+### WanderHub — Tourism & Destination Discovery
+Full-stack tourism platform with Passport.js auth, Mapbox maps, Cloudinary uploads, and a reviews system.  
+`Node.js` `Express.js` `MongoDB` `Passport.js` `Cloudinary` `Mapbox`  
+**Live →** [wanderhub-mxi3.onrender.com](https://wanderhub-mxi3.onrender.com/listings)
 
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+### Spotify Clone — UI Recreation
+Pixel-accurate responsive recreation of the Spotify web player.  
+`HTML5` `CSS3` `JavaScript`
 
-3. **Start the development server:**
-   ```bash
-   npm run dev
-   ```
-
-4. **View the site:** Open your browser and navigate to `http://localhost:5173/Portfolio/`
 
 ---
 
-## 🌐 Connect With Me
+## Contact
 
-- 🔗 **LinkedIn:** [shubhamv9546](https://linkedin.com) *(Update with your link)*
-- 🐙 **GitHub:** [@Shubham11114](https://github.com/Shubham11114)
-- ❌ **X (Twitter):** [@Shubham_11114](https://x.com/Shubham_11114)
-- 📧 **Email:** shubhamv9546@gmail.com
+**Email:** shubhamv9546@gmail.com  
+**LinkedIn:** [linkedin.com/in/shubham11114](https://www.linkedin.com/in/shubham11114)  
+**GitHub:** [github.com/Shubham11114](https://github.com/Shubham11114)  
+**X:** [@Shubham_11114](https://x.com/Shubham_11114)
 
-> Feel free to connect, collaborate, or just say hi!
+---
+
+<p align="center"><sub>Built with React + Vite · Designed and developed by Shubham Kumar</sub></p>

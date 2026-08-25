@@ -17,11 +17,26 @@ const Education = () => {
                             <FaGraduationCap />
                         </div>
                         <div className="edu-details">
+                            <h3 className="edu-degree">B.Tech in Computer Science and Engineering</h3>
+                            <p className="edu-institution">Hemwati Nandan Bahuguna Garhwal University (HNBGU), Srinagar, Uttarakhand</p>
+                            <p className="edu-period">Aug 2026 – 2029 · Lateral Entry (2nd Year)</p>
+                            <div className="edu-score">
+                                <span className="score-badge">CURRENT</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="edu-card" style={{ transitionDelay: '0.15s' }}>
+                        <div className="edu-icon-wrap">
+                            <FaAward />
+                        </div>
+                        <div className="edu-details">
                             <h3 className="edu-degree">Diploma in Computer Science and Engineering</h3>
-                            <p className="edu-institution">State Board of Technical Education, Patna</p>
+                            <p className="edu-institution">State Board of Technical Education, Bihar, Patna — Government Polytechnic Muzaffarpur</p>
                             <p className="edu-period">2023 – 2026</p>
                             <div className="edu-score">
                                 <span className="score-badge">CGPA: 8.68</span>
+                                <span className="score-badge" style={{ marginLeft: '8px' }}>COMPLETED</span>
                             </div>
                             <div className="edu-coursework">
                                 <h4>Relevant Coursework</h4>

@@ -21,7 +21,7 @@ const About = () => {
                             My journey in web development started with a curiosity for how things work on the internet, which quickly turned into a passion for building scalable, user-friendly web applications. I have hands-on experience building end-to-end web applications — from designing responsive UIs to developing RESTful APIs and integrating databases.
                         </p>
                         <p>
-                            Strong foundations in Data Structures, OOP, and modern JavaScript. Eager to contribute as a Junior MERN Stack Developer and grow within a collaborative, product-focused team.
+                            Currently pursuing B.Tech in CSE at HNBGU via lateral entry. I've completed internships at Ranjan Technovate Pvt. Ltd., VaultofCodes, and a JPMorgan Chase Software Engineering simulation through Forage — working on real-world MERN stack projects throughout.
                         </p>
 
                         <div className="info-chips">
@@ -31,7 +31,7 @@ const About = () => {
                             </div>
                             <div className="info-chip">
                                 <FaGraduationCap className="chip-icon" />
-                                <span>Diploma in CSE — CGPA: 8.68</span>
+                                <span>B.Tech CSE @ HNBGU · Diploma CGPA: 8.68</span>
                             </div>
                             <div className="info-chip">
                                 <FaCode className="chip-icon" />
@@ -60,7 +60,7 @@ const About = () => {
 
                         <div className="about-cta">
                             <a href="#contact" className="btn btn-primary">Let's Talk</a>
-                            <a href={resumePdf} download="resume.pdf" className="btn btn-outline" style={{ marginLeft: '15px' }}>
+                            <a href={resumePdf} download="Shubham_Resume_(MERN_Stack).pdf" className="btn btn-outline" style={{ marginLeft: '15px' }}>
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ marginRight: '8px', verticalAlign: 'middle' }}><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" /></svg>
                                 Download CV
                             </a>

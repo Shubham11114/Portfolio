@@ -1,13 +1,13 @@
 import React from 'react';
 import { FaReact, FaHtml5, FaCss3Alt, FaNodeJs, FaJava, FaPython, FaGitAlt, FaGithub } from 'react-icons/fa';
-import { SiJavascript, SiExpress, SiC, SiMongodb, SiMysql, SiFlask } from 'react-icons/si';
+import { SiJavascript, SiExpress, SiC, SiMongodb, SiMysql, SiFlask, SiJsonwebtokens, SiPassport, SiCloudinary, SiMapbox } from 'react-icons/si';
 import { VscVscode } from "react-icons/vsc";
 import { useScrollReveal } from '../hooks/useScrollReveal';
 import '../styles/skills.css';
 
 const skillsData = {
     Languages: [
-        { name: 'JavaScript (ES6+)', icon: <SiJavascript color="#F7DF1E" /> },
+        { name: 'JavaScript', icon: <SiJavascript color="#F7DF1E" /> },
         { name: 'HTML5', icon: <FaHtml5 color="#E34F26" /> },
         { name: 'CSS3', icon: <FaCss3Alt color="#1572B6" /> },
         { name: 'Python', icon: <FaPython color="#3776AB" /> },
@@ -18,7 +18,8 @@ const skillsData = {
         { name: 'React.js', icon: <FaReact color="#61DAFB" /> },
         { name: 'Node.js', icon: <FaNodeJs color="#339933" /> },
         { name: 'Express.js', icon: <SiExpress color="var(--text-primary)" /> },
-        // { name: 'Flask', icon: <SiFlask color="var(--text-primary)" /> },
+        { name: 'JWT', icon: <SiJsonwebtokens color="#fb015b" /> },
+        { name: 'Passport.js', icon: <SiPassport color="#34E27A" /> },
     ],
     Databases: [
         { name: 'MongoDB', icon: <SiMongodb color="#47A248" /> },
@@ -28,6 +29,8 @@ const skillsData = {
         { name: 'Git', icon: <FaGitAlt color="#F05032" /> },
         { name: 'GitHub', icon: <FaGithub color="var(--text-primary)" /> },
         { name: 'VS Code', icon: <VscVscode color="#007ACC" /> },
+        { name: 'Cloudinary', icon: <SiCloudinary color="#3448C5" /> },
+        { name: 'Mapbox', icon: <SiMapbox color="#000000" /> },
     ],
 };
 
@@ -38,6 +41,10 @@ const coreConceptsList = [
     'DBMS',
     'Operating Systems',
     'Responsive Web Design',
+    'Full Stack Development',
+    'Computer Networking',
+    'TCP/IP',
+    'Cybersecurity',
 ];
 
 const Skills = () => {

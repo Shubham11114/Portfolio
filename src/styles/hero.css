@@ -344,10 +344,15 @@
 
     .hero-socials {
         justify-content: center;
+        margin-bottom: 80px;
     }
 
     .hero-actions {
         justify-content: center;
+    }
+
+    .scroll-indicator {
+        bottom: 16px;
     }
 
     .robot-wrapper {

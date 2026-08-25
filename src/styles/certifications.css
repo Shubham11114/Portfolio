@@ -1,0 +1,127 @@
+/* Certifications Section */
+.cert-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background: var(--gradient-main);
+    color: white;
+    border-radius: 50%;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.certs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+/* Certificate Card */
+.cert-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: var(--bg-glass);
+    border: var(--glass-border);
+    border-radius: 18px;
+    padding: 22px 24px;
+    backdrop-filter: var(--backdrop-blur);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.cert-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(59, 130, 246, 0.03);
+    transition: width 0.4s ease;
+}
+
+.cert-card:hover::before {
+    width: 100%;
+}
+
+.cert-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+    border-color: rgba(59, 130, 246, 0.15);
+}
+
+/* Icon */
+.cert-icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    z-index: 1;
+}
+
+/* Info */
+.cert-info {
+    flex: 1;
+    min-width: 0;
+    z-index: 1;
+}
+
+.cert-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 3px;
+    line-height: 1.35;
+}
+
+.cert-issuer {
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+/* Date */
+.cert-date {
+    font-size: 0.78rem;
+    padding: 4px 12px;
+    background: rgba(59, 130, 246, 0.08);
+    color: var(--primary);
+    border-radius: 20px;
+    border: 1px solid rgba(59, 130, 246, 0.12);
+    font-weight: 600;
+    white-space: nowrap;
+    flex-shrink: 0;
+    z-index: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .certs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cert-card {
+        padding: 18px 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .cert-card {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .cert-date {
+        margin-left: auto;
+    }
+}

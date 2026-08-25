@@ -12,7 +12,7 @@ const Navbar = () => {
             setScrolled(window.scrollY > 50);
 
             // Active section detection
-            const sections = ['hero', 'about', 'skills', 'projects', 'roadmap', 'education', 'contact'];
+            const sections = ['hero', 'about', 'skills', 'projects', 'experience', 'roadmap', 'education', 'certifications', 'contact'];
             for (const id of sections.reverse()) {
                 const el = document.getElementById(id);
                 if (el && window.scrollY >= el.offsetTop - 200) {
@@ -43,8 +43,10 @@ const Navbar = () => {
         { name: 'About', href: '#about' },
         { name: 'Skills', href: '#skills' },
         { name: 'Projects', href: '#projects' },
+        { name: 'Experience', href: '#experience' },
         { name: 'Journey', href: '#roadmap' },
         { name: 'Education', href: '#education' },
+        { name: 'Certs', href: '#certifications' },
         { name: 'Contact', href: '#contact' },
     ];
 
